@@ -1,6 +1,6 @@
 ARG BUILD_FROM=ghcr.io/home-assistant/base:3.23
 
-FROM ghcr.io/xtls/xray-core:25.10.15@sha256:9e479c59250703491b930da62dd6544bb5207b3372e1d8d6ba300b635b2e4990 AS xray
+FROM ghcr.io/xtls/xray-core:26.3.27@sha256:592ec4d11f656db95598d01e76dbcc6e002d67360b96a5436500a938230f52c7 AS xray
 
 FROM ${BUILD_FROM}
 
