@@ -1,0 +1,10 @@
+configuration:
+  vless_uri:
+    name: VLESS URI
+    description: >-
+      Complete vless:// share link. Red Shield VPN VLESS links are supported.
+      Treat this value as a secret.
+  log_level:
+    name: Log level
+    description: Xray log verbosity. Warning is recommended.
+

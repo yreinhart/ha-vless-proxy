@@ -1,0 +1,24 @@
+name: VLESS SOCKS Proxy
+version: "0.2.0-beta.1"
+slug: vless_proxy
+description: >-
+  Private SOCKS5 proxy for selected Home Assistant integrations through a
+  VLESS outbound powered by Xray-core.
+url: "https://github.com/yreinhart/ha-vless-proxy/tree/main/vless_proxy"
+arch:
+  - aarch64
+  - amd64
+startup: services
+boot: auto
+init: false
+stage: experimental
+tmpfs: true
+watchdog: "tcp://[HOST]:1080"
+options:
+  vless_uri: null
+  log_level: warning
+schema:
+  vless_uri: password
+  log_level: list(debug|info|warning|error|none)
+image: "ghcr.io/yreinhart/ha-vless-proxy"
+
