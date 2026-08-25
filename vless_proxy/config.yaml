@@ -1,5 +1,5 @@
 name: VLESS SOCKS Proxy
-version: "0.2.0-beta.1"
+version: "0.2.0-beta.2"
 slug: vless_proxy
 description: >-
   Private SOCKS5 proxy for selected Home Assistant integrations through a
@@ -21,4 +21,3 @@ schema:
   vless_uri: password
   log_level: list(debug|info|warning|error|none)
 image: "ghcr.io/yreinhart/ha-vless-proxy"
-

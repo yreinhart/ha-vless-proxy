@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0-beta.2
+
+- Remove provider-specific references from documentation, translations, and tests.
+- Rebuild and publish the `aarch64` and `amd64` container images.
+
 ## 0.2.0-beta.1
 
 - Publish a provider-independent Home Assistant App repository.
