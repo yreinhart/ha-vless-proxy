@@ -2,9 +2,7 @@ configuration:
   vless_uri:
     name: Ссылка VLESS
     description: >-
-      Полная ссылка vless://. Поддерживаются ссылки VLESS от Red Shield VPN.
-      Считайте это значение секретом.
+      Полная ссылка vless://. Считайте это значение секретом.
   log_level:
     name: Уровень журналирования
     description: Подробность журнала Xray. Рекомендуется warning.
-

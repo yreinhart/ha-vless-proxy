@@ -7,7 +7,7 @@
 - Print the installation-specific internal SOCKS5 URL from Supervisor metadata.
 - Store the generated Xray configuration on a memory-backed `/tmp` filesystem.
 - Add a TCP watchdog, container health check, tests, and GitHub Actions builds.
-- Keep Red Shield VPN VLESS + XTLS Vision + REALITY as a tested configuration.
+- Document VLESS + XTLS Vision + REALITY as a tested configuration.
 
 ## 0.1.1
 
@@ -15,5 +15,4 @@
 
 ## 0.1.0
 
-- Initial private `aarch64` build for Red Shield VPN VLESS links.
-
+- Initial private `aarch64` build for VLESS links.

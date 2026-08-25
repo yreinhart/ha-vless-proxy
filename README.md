@@ -5,8 +5,8 @@ an internal, TCP-only SOCKS5 proxy powered by Xray-core.
 
 The proxy is available only on Home Assistant's internal app network. It is not
 published to your LAN. This lets one integration use VLESS while the rest of
-Home Assistant keeps its normal route. Red Shield VPN VLESS + REALITY links are
-a tested use case; the project is not affiliated with Red Shield VPN.
+Home Assistant keeps its normal route. Common VLESS configurations using
+REALITY and XTLS Vision are supported.
 
 ## Installation
 
@@ -30,7 +30,7 @@ Telegram integration's requests will use VLESS.
 - Architectures: `aarch64` and `amd64`
 - Security: REALITY, TLS, or none
 - Transports: TCP/RAW, WebSocket, gRPC, HTTPUpgrade, and XHTTP
-- Tested provider configuration: Red Shield VPN VLESS + XTLS Vision + REALITY
+- Tested configuration: VLESS + XTLS Vision + REALITY over TCP
 
 See [app documentation](vless_proxy/DOCS.md) for setup and troubleshooting.
 
@@ -51,8 +51,8 @@ Assistant. Весь Home Assistant через VPN не направляется:
 только та интеграция, в которой вы явно укажете выведенный в журнале адрес.
 
 Для Telegram Bot выберите polling и вставьте адрес из журнала приложения в
-поле **Proxy URL**. Конфигурации Red Shield VPN VLESS + REALITY проверены на
-практике, но проект не связан с Red Shield VPN.
+поле **Proxy URL**. Проверена конфигурация VLESS + XTLS Vision + REALITY через
+TCP.
 
 ## Development
 
@@ -68,4 +68,3 @@ Assistant builder actions and published to GHCR after changes reach `main`.
 
 The app wrapper is licensed under Apache-2.0. Xray-core is distributed under
 MPL-2.0; see [third-party notices](THIRD_PARTY_NOTICES.md).
-

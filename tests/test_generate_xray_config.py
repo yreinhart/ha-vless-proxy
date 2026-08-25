@@ -22,12 +22,12 @@ SPEC.loader.exec_module(MODULE)
 
 
 class BuildXrayConfigTest(unittest.TestCase):
-    def test_reality_tcp_redshield_style_uri(self):
+    def test_reality_tcp_vision_uri(self):
         uri = (
             "vless://11111111-2222-3333-4444-555555555555@vpn.example:443"
             "?encryption=none&flow=xtls-rprx-vision&security=reality"
             "&sni=www.example.com&fp=chrome&pbk=PUBLIC_KEY&sid=a1b2c3"
-            "&spx=%2F&type=tcp&headerType=none#RedShield"
+            "&spx=%2F&type=tcp&headerType=none#VLESS-Test"
         )
         config = MODULE.build_xray_config(
             {"vless_uri": uri, "log_level": "warning"}
@@ -101,4 +101,3 @@ class BuildXrayConfigTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

@@ -6,8 +6,8 @@ VLESS server. Everything else keeps the normal Home Assistant network route.
 
 ## Setup
 
-1. Obtain a complete VLESS share link beginning with `vless://`. For Red Shield
-   VPN, create a VLESS configuration under manual setup and copy its full link.
+1. Obtain a complete VLESS share link beginning with `vless://` from your VPN
+   or proxy provider.
 2. Paste the link into **VLESS URI**.
 3. Keep the log level at `warning`, save, and start the app.
 4. Open the app log and copy the line beginning with `SOCKS5 URL:`. The hostname
@@ -32,8 +32,8 @@ other Home Assistant traffic remains direct.
 ## Supported links
 
 The parser supports TCP/RAW, WebSocket, gRPC, HTTPUpgrade, and XHTTP transports,
-with REALITY, TLS, or no transport security. The primary tested Red Shield
-configuration is VLESS + XTLS Vision + REALITY over TCP.
+with REALITY, TLS, or no transport security. A tested configuration is VLESS +
+XTLS Vision + REALITY over TCP.
 
 The SOCKS5 listener supports TCP connections only. It has no username/password
 because it is isolated on the private Home Assistant app network. Port 1080 is
@@ -57,8 +57,8 @@ not exposed to the host or LAN.
 Приложение создаёт внутренний TCP SOCKS5-прокси Home Assistant и отправляет его
 трафик через VLESS. Остальной трафик Home Assistant продолжает идти напрямую.
 
-1. Получите полную ссылку, начинающуюся с `vless://`. В Red Shield VPN создайте
-   VLESS-конфигурацию в разделе ручной настройки и скопируйте ссылку целиком.
+1. Получите у своего VPN- или прокси-провайдера полную ссылку, начинающуюся с
+   `vless://`.
 2. Вставьте её в поле **Ссылка VLESS**, сохраните параметры и запустите
    приложение.
 3. Откройте журнал и скопируйте строку `SOCKS5 URL:`. Адрес зависит от способа
@@ -68,4 +68,3 @@ not exposed to the host or LAN.
 
 Ссылка VLESS содержит секрет подключения. Не публикуйте её. Порт 1080 доступен
 только во внутренней сети приложений Home Assistant и не открыт в домашнюю сеть.
-
